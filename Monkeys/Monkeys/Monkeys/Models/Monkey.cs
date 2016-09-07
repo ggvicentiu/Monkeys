@@ -12,6 +12,6 @@ namespace Monkeys.Models
         public string Location { get; set; }
         public string Details { get; set; }
         public string Image { get; set; }
-        public object NameSort => Name.Split(' ')[0];
+        public object NameSort => Name[0].ToString();
     }
 }

@@ -8,7 +8,7 @@
     <StackLayout>
       <Button Text="How Many Monkeys" x:Name="ButtonHowMany"></Button>
       <Label  Text="{Binding MonkeyCount, StringFormat='{0} Monkeys'}"/>
-      <ListView ItemsSource="{Binding Monkeys}"
+      <ListView ItemsSource="{Binding MonkeysGrouped}"
               ItemTapped="HandleItemTapped"
               ItemSelected="HandleItemSelected"
               HasUnevenRows="true"
